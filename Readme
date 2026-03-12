@@ -1,0 +1,144 @@
+# 🛣️ AI Road Damage Detection System
+
+An AI-powered web application that detects **road damages such as potholes, cracks, and surface distress** using a YOLO object detection model.  
+The system allows users to upload a road image and automatically identifies damages with bounding boxes and confidence scores.
+
+---
+
+## 🚀 Features
+
+- Upload road images
+- Detect potholes and road damage using YOLO
+- Display bounding boxes on detected damage
+- Show detection confidence scores
+- Download the annotated result image
+- Simple and interactive web interface using Streamlit
+
+---
+
+## 🧠 Technologies Used
+
+- Python
+- YOLO Object Detection
+- Ultralytics
+- Streamlit
+- OpenCV
+- NumPy
+- Pillow
+
+---
+
+## 📂 Project Structure
+
+
+image_classifiction/
+│
+├── app.py # Streamlit application
+├── model/
+│ └── best.pt # Trained YOLO model
+│
+├── runs/ # YOLO training outputs
+│
+├── requirements.txt # Required Python libraries
+└── README.md # Project documentation
+
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+
+
+git clone https://github.com/yourusername/road-damage-detection.git
+
+cd road-damage-detection
+
+
+---
+
+### 2️⃣ Create Virtual Environment
+
+
+python -m venv yolo_env
+
+
+Activate it:
+
+Windows
+
+yolo_env\Scripts\activate
+
+
+Mac/Linux
+
+source yolo_env/bin/activate
+
+
+---
+
+### 3️⃣ Install Dependencies
+
+
+pip install -r requirements.txt
+
+
+Or manually:
+
+
+pip install ultralytics streamlit opencv-python numpy pillow
+
+
+---
+
+## ▶️ Run the Application
+
+
+streamlit run app.py
+
+
+Then open in your browser:
+
+
+http://localhost:8501
+
+
+---
+
+## 📸 How It Works
+
+1. User uploads a road image
+2. YOLO model analyzes the image
+3. The system detects road damages
+4. Bounding boxes and confidence scores are displayed
+5. User can download the result image
+
+---
+
+## 📊 Example Output
+
+Detected damages will appear with bounding boxes and confidence scores on the uploaded image.
+
+---
+
+## 🔮 Future Improvements
+
+- Real-time road damage detection from video
+- GPS-based pothole mapping
+- Damage severity estimation
+- Mobile deployment
+- Integration with municipal reporting systems
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+
+GitHub: https://github.com/yourusername
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a **star ⭐ on GitHub**!
